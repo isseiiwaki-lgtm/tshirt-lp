@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>いわき市でオリジナルTシャツを作るなら | チームTシャツ・クラスT専門 いわき店</title>
+  <meta name="description" content="いわき市でオリジナルTシャツを作るなら。クラスT・部活T・イベントT・企業Tに対応。5枚から相談OK。デザインがなくても、LINEで気軽に見積相談できます。">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6f9;
+      --card: #ffffff;
+      --text: #0d1117;
+      --muted: #5a6478;
+      --subtle: #8491a8;
+      --line: #06c755;
+      --line-dark: #04a844;
+      --line-glow: rgba(6,199,85,.18);
+      --accent: #1d4ed8;
+      --accent-light: #eff4ff;
+      --border: #e0e6ef;
+      --border-soft: #edf1f7;
+      --warn: #fff7ed;
+      --warn-border: #fcd9a4;
+      --shadow-sm: 0 2px 8px rgba(13,17,23,.06);
+      --shadow: 0 8px 28px rgba(13,17,23,.09);
+      --shadow-lg: 0 20px 48px rgba(13,17,23,.13);
+      --radius: 20px;
+      --radius-sm: 12px;
+      --max: 1100px;
+      --font: "Noto Sans JP", -apple-system, "Hiragino Sans", sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+    /* ── PAGE BG TEXTURE ── */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 85% 0%, rgba(29,78,216,.07) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 10% 5%, rgba(6,199,85,.07) 0%, transparent 55%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body > * { position: relative; z-index: 1; }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      background: rgba(13,17,23,.97);
+      color: #fff;
+      font-size: 13.5px;
+      font-weight: 500;
+      letter-spacing: .01em;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .topbar .inner {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 9px 0;
+      flex-wrap: wrap;
+    }
+    .topbar .meta { display: flex; flex-wrap: wrap; gap: 16px; opacity: .78; }
+    .topbar .meta span { display: flex; align-items: center; gap: 5px; }
+    .topbar .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .topbar .link-btn {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.07);
+      font-weight: 700;
+      font-size: 13px;
+      transition: background .18s, border-color .18s;
+      letter-spacing: .01em;
+    }
+    .topbar .link-btn:hover { background: rgba(255,255,255,.13); }
+    .topbar .link-btn.line {
+      background: var(--line);
+      border-color: var(--line);
+      color: #fff;
+    }
+    .topbar .link-btn.line:hover { background: var(--line-dark); }
+
+    /* ── HERO ── */
+    header.hero { padding: 36px 0 32px; }
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+    .hero-main {
+      background: rgba(255,255,255,.88);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,.7);
+      border-radius: 28px;
+      padding: 38px 38px 34px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-main::before {
+      content: "";
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      background: radial-gradient(circle, rgba(6,199,85,.12), transparent 65%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 13px;
+      background: var(--accent-light);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+    h1 {
+      font-size: clamp(28px, 4.4vw, 48px);
+      line-height: 1.18;
+      letter-spacing: -.025em;
+      font-weight: 900;
+      margin: 0 0 16px;
+      color: var(--text);
+    }
+    h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 18px);
+      color: var(--muted);
+      margin: 0 0 22px;
+      line-height: 1.8;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 20px;
+      padding: 0;
+      list-style: none;
+    }
+    .badges li {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: border-color .18s, box-shadow .18s;
+    }
+    .badges li::before {
+      content: "✓";
+      color: var(--line);
+      font-weight: 900;
+      font-size: 12px;
+    }
+    .hero-note {
+      margin: 0 0 24px;
+      color: var(--subtle);
+      font-size: 13px;
+      padding-left: 1em;
+      border-left: 3px solid var(--border);
+    }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 50px;
+      padding: 0 22px;
+      border-radius: var(--radius-sm);
+      font-weight: 800;
+      font-family: var(--font);
+      font-size: 15px;
+      text-align: center;
+      transition: transform .18s, box-shadow .18s, background .18s;
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      letter-spacing: .01em;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: var(--line);
+      color: #fff;
+      border-color: var(--line);
+      box-shadow: 0 6px 20px var(--line-glow);
+    }
+    .btn-primary:hover {
+      background: var(--line-dark);
+      box-shadow: 0 10px 28px rgba(6,199,85,.28);
+    }
+    .btn-secondary {
+      background: #fff;
+      border-color: var(--border);
+      color: var(--text);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-secondary:hover { border-color: #c8d0de; }
+    .btn-ghost {
+      background: transparent;
+      border-color: var(--border);
+      color: var(--muted);
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,.6); color: var(--text); }
+    .btn-accent {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 6px 20px rgba(29,78,216,.18);
+    }
+    .btn-accent:hover { background: #1a44be; box-shadow: 0 10px 28px rgba(29,78,216,.26); }
+
+    /* ── HERO SIDE ── */
+    .hero-side {
+      background: rgba(255,255,255,.78);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,.65);
+      border-radius: 28px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: var(--shadow);
+    }
+    .hero-card {
+      background: #fff;
+      border: 1.5px solid var(--border-soft);
+      border-radius: 18px;
+      padding: 20px;
+    }
+    .hero-card h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .hero-card h3 {
+      margin: 0 0 12px;
+      font-size: 15.5px;
+      font-weight: 800;
+    }
+    .hero-list { padding-left: 0; margin: 0; list-style: none; }
+    .hero-list li {
+      padding: 6px 0;
+      font-size: 14px;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border-soft);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-list li:last-child { border-bottom: none; }
+    .hero-list li::before {
+      content: "→";
+      color: var(--line);
+      font-weight: 900;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .quick-grid div {
+      border: 1.5px solid var(--border-soft);
+      border-radius: 12px;
+      padding: 11px 12px;
+      background: var(--bg);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.5;
+      transition: border-color .18s, background .18s;
+    }
+    .quick-grid div:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+    .quick-grid div small {
+      display: block;
+      font-weight: 500;
+      color: var(--subtle);
+      font-size: 11.5px;
+      margin-top: 2px;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 32px 0; }
+    .section-head { margin-bottom: 22px; }
+    .section-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 900;
+      color: var(--accent);
+      margin-bottom: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      background: var(--accent-light);
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .section-head h2 {
+      margin: 0 0 10px;
+      font-size: clamp(24px, 3.4vw, 34px);
+      line-height: 1.22;
+      font-weight: 900;
+      letter-spacing: -.02em;
+    }
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 700px;
+      font-size: 15px;
+    }
+
+    /* ── CARD GRIDS ── */
+    .cards-2, .cards-3, .cards-4 { display: grid; gap: 14px; }
+    .cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cards-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cards-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .card {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow .22s, transform .22s, border-color .22s;
+    }
+    .card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-2px);
+      border-color: #d0d9e8;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -.01em;
+    }
+    .card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+
+    .number {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      background: var(--accent-light);
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    /* ── PANEL ── */
+    .panel {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 26px;
+      box-shadow: var(--shadow-sm);
+      padding: 28px;
+    }
+
+    /* ── SERVICE CARD ── */
+    .service-card { position: relative; overflow: hidden; }
+    .service-card .card-icon {
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    /* ── TRUST SECTION ── */
+    .trust {
+      background: #0d1117;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .trust::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 80% 100%, rgba(29,78,216,.18), transparent 55%),
+        radial-gradient(ellipse 50% 45% at 15% 20%, rgba(6,199,85,.12), transparent 50%);
+      pointer-events: none;
+    }
+    .trust > * { position: relative; }
+    .trust .section-tag { color: #93c5fd; background: rgba(147,197,253,.1); }
+    .trust .section-head p, .trust .card p { color: rgba(255,255,255,.72); }
+    .trust .card {
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.1);
+      box-shadow: none;
+    }
+    .trust .card:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.18); }
+    .trust .card h3 { color: #fff; }
+    .trust .number { background: rgba(147,197,253,.15); color: #93c5fd; }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(6,199,85,.15);
+      color: #4ade80;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    /* ── IG STRIP ── */
+    .ig-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0 22px;
+    }
+    .ig-item {
+      background: linear-gradient(145deg, #f0f4ff, #f6f0ff);
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      min-height: 120px;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .ig-item:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+    .ig-item strong { display: block; margin-bottom: 8px; font-size: 15px; font-weight: 800; }
+    .ig-item span { color: var(--muted); font-size: 13.5px; line-height: 1.65; }
+
+    /* ── PRICE ── */
+    .price-box {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+    .quote-card {
+      background: var(--warn);
+      border: 1.5px solid var(--warn-border);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .quote-card h3 { margin: 0 0 10px; font-size: 20px; font-weight: 800; }
+    .quote-card p { margin: 0; color: #854d0e; font-size: 14.5px; line-height: 1.75; }
+    .check-list, .bullet-list {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .check-list li, .bullet-list li {
+      padding: 7px 0;
+      font-size: 14.5px;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border-soft);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .check-list li:last-child, .bullet-list li:last-child { border-bottom: none; }
+    .check-list li::before { content: "✓"; color: var(--line); font-weight: 900; font-size: 13px; flex-shrink: 0; }
+    .bullet-list li::before { content: "–"; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+    /* ── FLOW ── */
+    .flow { display: grid; gap: 12px; }
+    .flow-item {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 18px;
+      align-items: start;
+      padding: 20px;
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow .2s, border-color .2s;
+    }
+    .flow-item:hover { box-shadow: var(--shadow); border-color: #d0d9e8; }
+    .flow-step {
+      width: 72px; height: 72px;
+      border-radius: 18px;
+      background: var(--accent-light);
+      color: var(--accent);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      line-height: 1;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .flow-step .step-label { font-size: 10px; letter-spacing: .06em; text-transform: uppercase; opacity: .7; }
+    .flow-step .step-num { font-size: 26px; margin-top: 2px; }
+    .flow-body h3 { margin: 0 0 6px; font-size: 17px; font-weight: 800; }
+    .flow-body p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+
+    /* ── VOICE ── */
+    .voice-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .voice-card {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .voice-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+    .voice-card::before {
+      content: """;
+      position: absolute;
+      top: 12px; left: 18px;
+      font-size: 56px;
+      color: var(--border);
+      font-family: Georgia, serif;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .voice-card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 14px;
+      padding-top: 18px;
+      line-height: 1.8;
+    }
+    .voice-meta { display: flex; align-items: center; gap: 8px; }
+    .voice-dot {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .voice-meta strong { font-size: 13px; color: var(--muted); }
+
+    /* ── FAQ ── */
+    details {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 22px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color .2s;
+    }
+    details:hover { border-color: #c8d0de; }
+    details + details { margin-top: 10px; }
+    details[open] { border-color: var(--accent); }
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 15.5px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      width: 24px; height: 24px;
+      border-radius: 6px;
+      background: var(--accent-light);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      flex-shrink: 0;
+      transition: background .18s;
+    }
+    details[open] summary::after { content: "−"; background: var(--accent); color: #fff; }
+    details p { margin: 14px 0 0; color: var(--muted); font-size: 14.5px; line-height: 1.8; }
+
+    /* ── FINAL CTA ── */
+    .final { background: linear-gradient(150deg, rgba(6,199,85,.06), rgba(29,78,216,.07)); }
+    .final .panel { background: rgba(255,255,255,.9); padding: 38px; }
+
+    /* ── FOOTER ── */
+    footer { padding: 28px 0 108px; }
+    .footer-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1.15fr .85fr;
+    }
+    .company {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+    .company h2 { margin: 0 0 10px; font-size: 18px; font-weight: 800; }
+    .company p { margin: 0 0 7px; color: var(--muted); font-size: 14px; }
+    .company p:last-child { margin-bottom: 0; }
+    .subtle-link { color: var(--accent); font-weight: 800; }
+    .subtle-link:hover { text-decoration: underline; }
+
+    /* ── STICKY BAR ── */
+    .sticky-bar {
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 50;
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+      background: rgba(244,246,249,.92);
+      backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(13,17,23,.08);
+    }
+    .sticky-inner {
+      width: min(calc(100% - 0px), 720px);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 8px;
+    }
+    .sticky-inner .btn { min-height: 46px; font-size: 14.5px; }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--border), transparent);
+      margin: 4px 0;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-main, .hero-side { animation: fadeUp .5s ease both; }
+    .hero-side { animation-delay: .1s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .hero-wrap, .price-box, .footer-grid,
+      .cards-2, .cards-3, .cards-4, .voice-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-main, .hero-side, .panel { padding: 22px; }
+      .final .panel { padding: 24px; }
+    }
+    @media (max-width: 720px) {
+      .topbar .inner { justify-content: center; }
+      .topbar .meta, .topbar .actions { justify-content: center; }
+      h1 { letter-spacing: -.03em; }
+      .ig-strip, .quick-grid { grid-template-columns: 1fr; }
+      .flow-item { grid-template-columns: 1fr; }
+      .flow-step { width: 100%; height: 50px; flex-direction: row; gap: 10px; border-radius: 12px; }
+      .sticky-inner { grid-template-columns: 1fr 1fr; }
+      .btn { width: 100%; }
+      .cta-row { flex-direction: column; }
+      section { padding: 24px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="inner">
+      <div class="meta">
+        <span>チームT・クラスT専門 いわき店</span>
+        <span>受付 8:30〜17:00（月〜金）</span>
+        <span>TEL 0246-34-4600</span>
+      </div>
+      <div class="actions">
+        <a class="link-btn line" href="https://line.me/R/ti/p/@159xjnot?oat_content=url&ts=11061535" target="_blank" rel="noopener noreferrer">LINEで相談</a>
+        <a class="link-btn" href="tel:0246344600">電話する</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-wrap">
+      <div class="hero-main">
+        <div class="eyebrow">Iwaki City &nbsp;/&nbsp; オリジナルTシャツ制作</div>
+        <h1>いわき市でオリジナルTシャツを<br><em>作るなら、まずご相談ください。</em></h1>
+        <p class="hero-sub">クラスT・部活T・イベントT・企業Tに対応。<strong>5枚から相談OK</strong>。デザインがなくても、LINEで気軽に見積相談できます。</p>
+        <ul class="badges">
+          <li>小ロット対応（5枚〜）</li>
+          <li>デザイン相談OK</li>
+          <li>LINEで見積相談OK</li>
+          <li>地元いわきで相談しやすい</li>
+        </ul>
+        <p class="hero-note">納期は内容に応じてご案内します。お急ぎの場合もまずはご相談ください。</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://line.me/R/ti/p/@159xjnot?oat_content=url&ts=11061535" target="_blank" rel="noopener noreferrer">LINEで見積相談する</a>
+          <a class="btn btn-secondary" href="#contact">お問い合わせ・電話はこちら</a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div class="hero-card">
+          <h2>まずこの内容を送ってください</h2>
+          <ul class="hero-list">
+            <li>希望納期（目安でOK）</li>
+            <li>枚数（ざっくりでOK）</li>
+            <li>用途（クラスT・部活T・企業Tなど）</li>
+            <li>デザインの有無</li>
+            <li>印刷したい位置</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h3>こんな用途に対応</h3>
+          <div class="quick-grid">
+            <div>クラスT<small>体育祭・文化祭</small></div>
+            <div>部活T<small>練習・応援・記念</small></div>
+            <div>イベントT<small>団体・スタッフ用</small></div>
+            <div>企業T<small>ロゴ入り・制服用</small></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <!-- FIRST GUIDE -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">First Guide</div>
+          <h2>はじめてのTシャツ制作でも安心です</h2>
+          <p>「何枚から作れる？」「デザインがなくても大丈夫？」そんなご相談に、いわき市の制作会社が丁寧に対応します。</p>
+        </div>
+        <div class="cards-3">
+          <div class="card">
+            <div class="number">01</div>
+            <h3>まずは相談からでOK</h3>
+            <p>内容がまだ固まっていなくても大丈夫です。分かる範囲だけ送っていただければ進められます。</p>
+          </div>
+          <div class="card">
+            <div class="number">02</div>
+            <h3>デザインがなくても大丈夫</h3>
+            <p>手書きラフ、参考画像、イメージだけでもご相談いただけます。社内でデザイン作成も可能です。</p>
+          </div>
+          <div class="card">
+            <div class="number">03</div>
+            <h3>見積・相談は無料</h3>
+            <p>まずは費用感と進め方を知りたい、という段階でもOK。気軽に比較検討していただけます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOR YOU -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">For You</div>
+          <h2>こんな方におすすめです</h2>
+          <p>学校、部活、イベント、企業のスタッフウェアまで幅広く対応します。</p>
+        </div>
+        <div class="cards-2">
+          <div class="card">
+            <div class="number" style="background:#f0fdf4;color:#16a34a;">🏫</div>
+            <h3>学校・クラス向け</h3>
+            <p>クラスTシャツ、文化祭、体育祭、卒業記念など。みんなで揃えて着たいウェアに。</p>
+          </div>
+          <div class="card">
+            <div class="number" style="background:#eff6ff;color:#2563eb;">⚽</div>
+            <h3>部活・チーム向け</h3>
+            <p>練習用、応援用、卒部記念に。名前・背番号入れの相談も可能です。</p>
+          </div>
+          <div class="card">
+            <div class="number" style="background:#fef9c3;color:#a16207;">🎪</div>
+            <h3>イベント・団体向け</h3>
+            <p>スタッフT、地域イベント、サークル、ボランティア、フェス出店などに。</p>
+          </div>
+          <div class="card">
+            <div class="number" style="background:#faf5ff;color:#7e22ce;">🏢</div>
+            <h3>企業・店舗向け</h3>
+            <p>会社ロゴ入りTシャツ、ポロシャツ、ユニフォーム、展示会や販促イベントにも対応。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Why Us</div>
+          <h2 style="color:#fff;">いわきで相談しやすい体制を整えています</h2>
+          <p>価格だけでなく、相談のしやすさ・進めやすさで選ばれています。</p>
+        </div>
+        <div class="cards-4">
+          <div class="card">
+            <div class="number">01</div>
+            <h3>5枚から相談OK</h3>
+            <p>少人数のチームやイベント用など、小ロットのご相談にも対応します。</p>
+          </div>
+          <div class="card">
+            <div class="number">02</div>
+            <h3>デザイン相談OK</h3>
+            <p>手書きラフや参考画像からでも進められます。データ制作からの依頼も可能です。</p>
+          </div>
+          <div class="card">
+            <div class="number">03</div>
+            <h3>LINEで進めやすい</h3>
+            <p>見積相談、内容確認、やり取りまでLINE中心で進められるので、動きやすい構成です。</p>
+          </div>
+          <div class="card">
+            <div class="number">04</div>
+            <h3>地元で相談できて安心</h3>
+            <p>いわき市の制作会社として、用途やスケジュールに合わせて丁寧にご案内します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Service</div>
+          <h2>対応しているTシャツ制作</h2>
+          <p>用途ごとに相談しやすいよう、代表的なカテゴリで整理しています。</p>
+        </div>
+        <div class="cards-4">
+          <div class="card service-card">
+            <div class="card-icon">🎒</div>
+            <h3>クラスTシャツ</h3>
+            <p>文化祭、体育祭、学園祭などの思い出づくりに。みんなで揃えて着たくなるデザインをご提案します。</p>
+          </div>
+          <div class="card service-card">
+            <div class="card-icon">🏆</div>
+            <h3>部活・スポ少・チームT</h3>
+            <p>練習用、応援用、記念用に対応。名前・背番号入れのご相談も可能です。</p>
+          </div>
+          <div class="card service-card">
+            <div class="card-icon">🎟️</div>
+            <h3>イベント・団体Tシャツ</h3>
+            <p>地域イベント、サークル、スタッフ用、記念品用など、用途に合わせて制作できます。</p>
+          </div>
+          <div class="card service-card">
+            <div class="card-icon">💼</div>
+            <h3>企業・スタッフウェア</h3>
+            <p>会社ロゴ入りのスタッフTシャツやポロシャツにも対応。企業イメージに合わせた提案も可能です。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section>
+      <div class="container panel">
+        <div class="section-head" style="margin-bottom:10px;">
+          <div class="section-tag">Instagram</div>
+          <h2>制作事例はInstagramでもご覧いただけます</h2>
+          <p>クラスT・部活T・イベントT・企業Tの制作事例を随時更新しています。仕上がりやデザインの雰囲気を見たい方はこちらもどうぞ。</p>
+        </div>
+        <div class="ig-strip">
+          <div class="ig-item">
+            <strong>クラスTの事例</strong>
+            <span>カラーやレイアウト、行事向けの雰囲気づくりを確認できます。</span>
+          </div>
+          <div class="ig-item">
+            <strong>部活・チームTの事例</strong>
+            <span>名前・背番号やチーム感のあるデザインの参考になります。</span>
+          </div>
+          <div class="ig-item">
+            <strong>企業・イベント事例</strong>
+            <span>ロゴ入り、スタッフ用、販促向けの仕上がり確認におすすめです。</span>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="https://www.instagram.com/tshirtiwaki/" target="_blank" rel="noopener noreferrer">Instagramで制作事例を見る →</a>
+      </div>
+    </section>
+
+    <!-- PRICE -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Price</div>
+          <h2>料金は内容に応じてご案内します</h2>
+          <p>料金は枚数・ウェアの種類・印刷位置・色数・デザイン内容によって変わります。まずは条件を送っていただければ、見積の方向性が出しやすくなります。</p>
+        </div>
+        <div class="price-box">
+          <div class="panel">
+            <h3 style="margin:0 0 16px;font-size:19px;font-weight:800;">こんな相談でOKです</h3>
+            <ul class="bullet-list">
+              <li>クラスTを10枚前後で作りたい</li>
+              <li>部活で名前や番号も入れたい</li>
+              <li>企業ロゴ入りのスタッフTを作りたい</li>
+              <li>デザインがまだ決まっていない</li>
+            </ul>
+            <div class="cta-row" style="margin-top:20px;">
+              <a class="btn btn-primary" href="https://line.me/R/ti/p/@159xjnot?oat_content=url&ts=11061535" target="_blank" rel="noopener noreferrer">LINEで見積相談する</a>
+            </div>
+          </div>
+          <div class="quote-card">
+            <h3>価格で迷ったら、まず相談型で</h3>
+            <p>複雑な単価表を前面に出すより、条件を送れば見積しやすい構成にしています。小ロット、名前・番号入れ、デザイン作成も相談OKです。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINE GUIDE -->
+    <section>
+      <div class="container panel">
+        <div class="section-head">
+          <div class="section-tag">Line Guide</div>
+          <h2>LINEで送ってほしい内容</h2>
+          <p>見積相談の際は、次の内容をいただくとご案内がスムーズです。分かる範囲だけで大丈夫です。</p>
+        </div>
+        <div class="cards-2">
+          <div class="card">
+            <h3>送っていただく内容</h3>
+            <ul class="check-list">
+              <li>希望納期（目安でOK）</li>
+              <li>枚数</li>
+              <li>用途（クラスT・部活T・企業Tなど）</li>
+              <li>デザインの有無</li>
+              <li>印刷したい位置</li>
+              <li>分かればサイズ構成</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>ひと言だけでもOKです</h3>
+            <p style="color:var(--muted);font-size:14.5px;line-height:1.8;">「相談したい」「文化祭用に作りたい」「会社ロゴ入りで考えたい」など、まずは簡単なメッセージからでも進められます。</p>
+            <div class="cta-row" style="margin-top:20px;">
+              <a class="btn btn-primary" href="https://line.me/R/ti/p/@159xjnot?oat_content=url&ts=11061535" target="_blank" rel="noopener noreferrer">LINEで相談する</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOW -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Flow</div>
+          <h2>ご注文の流れ</h2>
+          <p>相談から納品まで5ステップで分かりやすく整理しました。</p>
+        </div>
+        <div class="flow">
+          <div class="flow-item">
+            <div class="flow-step"><span class="step-label">STEP</span><span class="step-num">01</span></div>
+            <div class="flow-body">
+              <h3>ご相談</h3>
+              <p>LINE・電話・来店でご相談いただけます。枚数や用途がまだ決まっていなくても大丈夫です。</p>
+            </div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-step"><span class="step-label">STEP</span><span class="step-num">02</span></div>
+            <div class="flow-body">
+              <h3>内容確認</h3>
+              <p>デザインデータ、画像、手書きラフなどを確認しながら進めます。デザイン作成からのご相談も可能です。</p>
+            </div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-step"><span class="step-label">STEP</span><span class="step-num">03</span></div>
+            <div class="flow-body">
+              <h3>お見積・お支払い</h3>
+              <p>内容を確認後、御見積書兼御請求書をお送りします。ご確認後、前払いにてお支払いをお願いいたします。</p>
+            </div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-step"><span class="step-label">STEP</span><span class="step-num">04</span></div>
+            <div class="flow-body">
+              <h3>仕上がり確認</h3>
+              <p>プリントイメージをご確認いただき、校了後に製造を開始します。</p>
+            </div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-step"><span class="step-label">STEP</span><span class="step-num">05</span></div>
+            <div class="flow-body">
+              <h3>納品</h3>
+              <p>来店でのお受け取り、または配送でお届けします。お急ぎの場合もまずはご相談ください。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICE -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Voice</div>
+          <h2>作ってよかった、という声をいただいています</h2>
+          <p>用途別に声を並べることで、自分と近い事例を見つけやすくしています。</p>
+        </div>
+        <div class="voice-grid">
+          <div class="voice-card">
+            <p>体育祭でクラスTシャツを作成したいと考えていたところで、いわき印刷さんを知りました。実物を手に取ってみることができ、みんなで相談して決めやすいと感じてお願いしました。</p>
+            <div class="voice-meta">
+              <div class="voice-dot">A</div>
+              <strong>クラスTシャツ / A.H さん</strong>
+            </div>
+          </div>
+          <div class="voice-card">
+            <p>最後の試合前に、チーム全員でお揃いのTシャツを作りました。LINEで気軽に問い合わせができる点が良く、生地の着心地もよくて長く使えています。</p>
+            <div class="voice-meta">
+              <div class="voice-dot">K</div>
+              <strong>チームTシャツ / K.W さん</strong>
+            </div>
+          </div>
+          <div class="voice-card">
+            <p>会社のロゴを取り入れたオリジナルデザインを提案してもらい、社員からも好評でした。イベント当日は全員がTシャツを着用して一体感を感じながら活動できました。</p>
+            <div class="voice-meta">
+              <div class="voice-dot">R</div>
+              <strong>企業Tシャツ / R.T さん</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <div class="container panel">
+        <div class="section-head" style="margin-bottom:16px;">
+          <div class="section-tag">FAQ</div>
+          <h2>よくある質問</h2>
+          <p>最初に不安になりやすい点を、短く分かりやすくまとめています。</p>
+        </div>
+        <details open>
+          <summary>何枚から注文できますか？</summary>
+          <p>5枚からご相談いただけます。5枚未満も内容によっては対応可能ですが、単価が上がりやすいためまずはご相談ください。</p>
+        </details>
+        <details>
+          <summary>デザインがなくても注文できますか？</summary>
+          <p>はい、大丈夫です。参考画像や手書きラフからのご相談も可能です。社内でデザイン作成も対応できます。</p>
+        </details>
+        <details>
+          <summary>納期はどのくらいですか？</summary>
+          <p>内容・枚数・加工方法によって変わります。使用日が決まっている場合は、できるだけ早めにご相談ください。お急ぎの場合もまずはご相談ください。</p>
+        </details>
+        <details>
+          <summary>名前や背番号は入れられますか？</summary>
+          <p>対応可能です。メンバー別の背番号や個人名のプリントにも対応しています。内容に応じて料金をご案内します。</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final">
+      <div class="container">
+        <div class="panel">
+          <div class="section-head" style="margin-bottom:18px;">
+            <div class="section-tag">Contact</div>
+            <h2>見積・相談は無料です</h2>
+            <p>枚数・用途・納期がまだ曖昧でも大丈夫です。いわき市でオリジナルTシャツを作るなら、まずはLINEでご相談ください。</p>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://line.me/R/ti/p/@159xjnot?oat_content=url&ts=11061535" target="_blank" rel="noopener noreferrer">LINEで見積相談する</a>
+            <a class="btn btn-secondary" href="tel:0246344600">電話で相談する</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/tshirtiwaki/" target="_blank" rel="noopener noreferrer">Instagramで事例を見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div class="company">
+        <h2>株式会社いわき印刷企画センター</h2>
+        <p>〒970-0107 福島県いわき市平荒田目字田中内南149-1</p>
+        <p>TEL：0246-34-4600 ／ FAX：0246-34-2070</p>
+        <p>受付時間：8:30〜17:00（月〜金）</p>
+        <p><a class="subtle-link" href="https://iwaki-i.com/" target="_blank" rel="noopener noreferrer">企業サイトを見る →</a></p>
+      </div>
+      <div class="company">
+        <h2>最新の制作事例はInstagramで更新中</h2>
+        <p>クラスT・部活T・イベントT・企業Tの制作事例を掲載しています。</p>
+        <p><a class="subtle-link" href="https://www.instagram.com/tshirtiwaki/" target="_blank" rel="noopener noreferrer">@tshirtiwaki を見る →</a></p>
+        <p style="margin-top:14px;"><a class="subtle-link" href="https://line.me/R/ti/p/@159xjnot?oat_content=url&ts=11061535" target="_blank" rel="noopener noreferrer">LINEで相談する →</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY BAR -->
+  <div class="sticky-bar">
+    <div class="sticky-inner">
+      <a class="btn btn-primary" href="https://line.me/R/ti/p/@159xjnot?oat_content=url&ts=11061535" target="_blank" rel="noopener noreferrer">LINEで見積相談</a>
+      <a class="btn btn-secondary" href="tel:0246344600">電話する</a>
+    </div>
+  </div>
+
+</body>
+</html>
